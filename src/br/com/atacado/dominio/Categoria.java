@@ -13,7 +13,6 @@ public class Categoria {
 
     private List<Subcategoria> subcategorias;
 
-    // "get" "set" //
     public int getCodigo() {
         return codigo;
     }
@@ -46,7 +45,6 @@ public class Categoria {
         this.subcategorias = subcategorias;
     }
 
-    // Construtor vazio //
     public Categoria() {
     }
 
@@ -56,11 +54,10 @@ public class Categoria {
         this.dataDeInclusao = dataDeInclusao;
     }
 
-    // Agrupamento //
     @Override
     public String toString() {
-        return "Categoria [codigo=" + codigo + ", descricao=" + descricao + ", dataDeInclusao=" + dataDeInclusao
-                + "]\n";
+        return "Categoria-> [Codigo:" + codigo + ", Descricao:" + descricao + "\nData De Inclusao:" + dataDeInclusao
+                + "]";
     }
 
 }

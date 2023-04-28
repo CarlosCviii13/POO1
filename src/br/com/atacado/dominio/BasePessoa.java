@@ -14,7 +14,6 @@ public abstract class BasePessoa {
 
     protected LocalDate dataInclusao;
 
-    // "get" "set" //
     public int getCodigoPessoa() {
         return codigoPessoa;
     }
@@ -55,7 +54,6 @@ public abstract class BasePessoa {
         this.dataInclusao = dataInclusao;
     }
 
-    // Construtor //
     public BasePessoa(int codigoPessoa, String nome, String email, String site, LocalDate dataInclusao) {
         this.codigoPessoa = codigoPessoa;
         this.nome = nome;
@@ -64,7 +62,6 @@ public abstract class BasePessoa {
         this.dataInclusao = dataInclusao;
     }
 
-    // Void Imprimir/ /
     public abstract void Imprimir();
 
 }

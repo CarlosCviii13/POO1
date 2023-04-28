@@ -15,7 +15,6 @@ public class Subcategoria {
 
     private List<Produto> produtos;
 
-    // "get" "set" //
     public int getCodigo() {
         return codigo;
     }
@@ -56,15 +55,20 @@ public class Subcategoria {
         this.produtos = produtos;
     }
 
-    // Construtor vazio //
     public Subcategoria() {
     }
 
-    // Agrupamento//
     public Subcategoria(int codigo, int codigoCategoria, String descricao, LocalDate dataDeInclusao) {
         this.codigo = codigo;
         this.codigoCategoria = codigoCategoria;
         this.descricao = descricao;
         this.dataDeInclusao = dataDeInclusao;
     }
+
+    @Override
+    public String toString() {
+        return "Subcategoria-> [Codigo:" + codigo + ", Codigo Categoria:" + codigoCategoria + ", Descricao:" + descricao
+                + "\nData De Inclusao:" + dataDeInclusao + "]";
+    }
+
 }

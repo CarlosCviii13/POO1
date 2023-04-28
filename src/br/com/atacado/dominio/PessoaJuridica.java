@@ -12,7 +12,6 @@ public class PessoaJuridica extends BasePessoa {
 
     private String nomeFantasia;
 
-    // "get" "set" //
     public String getCnpj() {
         return cnpj;
     }
@@ -45,7 +44,6 @@ public class PessoaJuridica extends BasePessoa {
         this.nomeFantasia = nomeFantasia;
     }
 
-    // Agrupador //
     public PessoaJuridica(int codigoPessoa, String nome, String email, String site, LocalDate dataInclusao, String cnpj,
             String inscricaoEstadual, String inscricaoMunicipal, String nomeFantasia) {
         super(codigoPessoa, nome, email, site, dataInclusao);
@@ -55,7 +53,6 @@ public class PessoaJuridica extends BasePessoa {
         this.nomeFantasia = nomeFantasia;
     }
 
-    // Imprimir dados //
     @Override
     public void Imprimir() {
         System.out.println("-- Detalhes da Pessoa Jurídica --");
@@ -70,19 +67,18 @@ public class PessoaJuridica extends BasePessoa {
         System.out.println("Nome Fantasia: " + this.nomeFantasia);
     }
 
-    // Imprimir Strings //
     @Override
     public String toString() {
-        return "PessoaJuridica [" +
-                "codigoPessoa=" + codigoPessoa +
-                ", nome=" + nome +
-                ", email=" + email +
-                ", site=" + site +
-                ", dataInclusao=" + dataInclusao +
-                ", cnpj=" + cnpj +
-                ", inscricaoEstadual=" + inscricaoEstadual +
-                ", inscricaoMunicipal=" + inscricaoMunicipal +
-                ", nomeFantasia=" + nomeFantasia +
+        return "Pessoa Juridica-> [" +
+                "Codigo Pessoa:" + codigoPessoa +
+                ", Nome:" + nome +
+                ", Email:" + email +
+                ", Site:" + site +
+                ", Data Inclusao:" + dataInclusao +
+                ", Cnpj:" + cnpj +
+                ", Inscricao Estadual:" + inscricaoEstadual +
+                ", Inscricao Municipal:" + inscricaoMunicipal +
+                ", Nome Fantasia:" + nomeFantasia +
                 "]";
     }
 

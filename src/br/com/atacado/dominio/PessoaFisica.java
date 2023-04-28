@@ -4,23 +4,22 @@ import java.time.LocalDate;
 
 public class PessoaFisica extends BasePessoa {
 
-    protected String cpf;
+    private String cpf;
 
-    protected String rg;
+    private String rg;
 
-    protected String sexo;
+    private String sexo;
 
-    protected String raca;
+    private String raca;
 
-    protected String nacionalidade;
+    private String nacionalidade;
 
-    protected String naturalidade;
+    private String naturalidade;
 
-    protected String nomePai;
+    private String nomePai;
 
-    protected String nomeMae;
+    private String nomeMae;
 
-    // "get" "set" //
     public String getCpf() {
         return cpf;
     }
@@ -85,7 +84,6 @@ public class PessoaFisica extends BasePessoa {
         this.nomeMae = nomeMae;
     }
 
-    // construtor //
     public PessoaFisica(int codigoPessoa, String nome, String email, String site, LocalDate dataInclusao, String cpf,
             String rg, String sexo, String raca, String nacionalidade, String naturalidade, String nomePai,
             String nomeMae) {
@@ -100,7 +98,6 @@ public class PessoaFisica extends BasePessoa {
         this.nomeMae = nomeMae;
     }
 
-    // Imprimir dados //
     @Override
     public void Imprimir() {
         System.out.println("-- Detalhes da Pessoa Física --");
@@ -119,23 +116,22 @@ public class PessoaFisica extends BasePessoa {
         System.out.println("Nome da Mãe: " + this.nomeMae);
     }
 
-    // Imprimir Strings //
     @Override
     public String toString() {
-        return "PessoaFisica [" +
-                "codigoPessoa=" + codigoPessoa +
-                ", nome=" + nome +
-                ", email=" + email +
-                ", site=" + site +
-                ", dataInclusao=" + dataInclusao +
-                ", cpf=" + cpf +
-                ", rg=" + rg +
-                ", sexo=" + sexo +
-                ", raca=" + raca +
-                ", nacionalidade=" + nacionalidade +
-                ", naturalidade=" + naturalidade +
-                ", nomePai=" + nomePai +
-                ", nomeMae=" + nomeMae
+        return "Pessoa Fisica-> [" +
+                "Codigo Pessoa:" + codigoPessoa +
+                ", Nome:" + nome +
+                ", Email:" + email +
+                ", Site:" + site +
+                ", Data Inclusao:" + dataInclusao +
+                ", Cpf:" + cpf +
+                ", Rg:" + rg +
+                ", Sexo:" + sexo +
+                ", Raca:" + raca +
+                ", Nacionalidade:" + nacionalidade +
+                ", Naturalidade:" + naturalidade +
+                ", Nome Pai:" + nomePai +
+                ", Nome Mae:" + nomeMae
                 + "]";
     }
 

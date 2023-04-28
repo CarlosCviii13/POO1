@@ -14,7 +14,6 @@ public class Produto {
 
     private LocalDate dataDeInclusao;
 
-    // "get" "set" //
     public int getCodigo() {
         return codigo;
     }
@@ -55,11 +54,9 @@ public class Produto {
         this.dataDeInclusao = dataDeInclusao;
     }
 
-    // construtor vazio //
     public Produto() {
     }
 
-    // Agrupamento //
     public Produto(int codigo, int codigoSubcategoria, String descricao, double valor, LocalDate dataDeInclusao) {
         this.codigo = codigo;
         this.codigoSubcategoria = codigoSubcategoria;
@@ -67,4 +64,11 @@ public class Produto {
         this.valor = valor;
         this.dataDeInclusao = dataDeInclusao;
     }
+
+    @Override
+    public String toString() {
+        return "Produto-> [Codigo:" + codigo + ", Codigo Subcategoria:" + codigoSubcategoria + ", Descricao:"
+                + descricao + ", Valor:" + valor + "\nData De Inclusao:" + dataDeInclusao + "]";
+    }
+
 }

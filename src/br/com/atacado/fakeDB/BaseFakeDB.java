@@ -11,10 +11,10 @@ public abstract class BaseFakeDB<T> {
         // singleton
         if (this.tabela == null) {
             this.tabela = new ArrayList<T>();
-            this.Autofill();
+            this.AutoFill();
         }
         return this.tabela;
     }
 
-    public abstract void Autofill();
+    public abstract void AutoFill();
 }
