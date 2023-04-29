@@ -2,6 +2,7 @@ package br.com.atacado.dominio;
 
 import java.time.LocalDate;
 
+// "Class abstract" porem e "protected" //
 public abstract class BasePessoa {
 
     protected int codigoPessoa;
@@ -14,6 +15,7 @@ public abstract class BasePessoa {
 
     protected LocalDate dataInclusao;
 
+    // Ctrol+Ponto -> "Get e Set" //
     public int getCodigoPessoa() {
         return codigoPessoa;
     }
@@ -54,6 +56,7 @@ public abstract class BasePessoa {
         this.dataInclusao = dataInclusao;
     }
 
+    // Ctrol+Ponto -> "Construtor" //
     public BasePessoa(int codigoPessoa, String nome, String email, String site, LocalDate dataInclusao) {
         this.codigoPessoa = codigoPessoa;
         this.nome = nome;

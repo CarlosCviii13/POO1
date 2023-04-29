@@ -4,6 +4,7 @@ import java.time.LocalDate;
 
 import br.com.atacado.dominio.Categoria;
 
+// "extends" + BaseFakeDB<"Nome da class"> //
 public class CategoriaFakeDB extends BaseFakeDB<Categoria> {
 
     @Override

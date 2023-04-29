@@ -3,6 +3,7 @@ package br.com.atacado.dominio;
 import java.time.LocalDate;
 import java.util.List;
 
+// "Class normal" porem "Private" //
 public class Categoria {
 
     private int codigo;
@@ -13,6 +14,7 @@ public class Categoria {
 
     private List<Subcategoria> subcategorias;
 
+    // Ctrol+Ponto -> "Get e Set" //
     public int getCodigo() {
         return codigo;
     }
@@ -45,9 +47,11 @@ public class Categoria {
         this.subcategorias = subcategorias;
     }
 
+    // Ctrol+Ponto -> "Contrutor Vazio" //
     public Categoria() {
     }
 
+    // Ctrol+Ponto -> "Construtor" //
     public Categoria(int codigo, String descricao, LocalDate dataDeInclusao) {
         this.codigo = codigo;
         this.descricao = descricao;

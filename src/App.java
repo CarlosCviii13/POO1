@@ -2,7 +2,8 @@ import br.com.atacado.dominio.*;
 import br.com.atacado.fakeDB.*;
 
 public class App {
-
+    // Para Inprimir use "public static void main(String[] args) throws Exception{"
+    // Uma maneira de espaçar "System.out.println(...);"
     public static void main(String[] args) throws Exception {
 
         System.out.println("------------------------------");

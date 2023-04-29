@@ -3,6 +3,7 @@ package br.com.atacado.dominio;
 import java.time.LocalDate;
 import java.util.List;
 
+// Class isolada "privada" //
 public class Subcategoria {
 
     private int codigo;
@@ -15,6 +16,7 @@ public class Subcategoria {
 
     private List<Produto> produtos;
 
+    // Ctrol+Ponto -> "Get e Set"
     public int getCodigo() {
         return codigo;
     }
@@ -55,6 +57,7 @@ public class Subcategoria {
         this.produtos = produtos;
     }
 
+    // Ctrol+Ponto -> "Construtor Vazio" //
     public Subcategoria() {
     }
 
@@ -65,6 +68,7 @@ public class Subcategoria {
         this.dataDeInclusao = dataDeInclusao;
     }
 
+    // Ctrol+Ponto -> "Construtor" //
     @Override
     public String toString() {
         return "Subcategoria-> [Codigo:" + codigo + ", Codigo Categoria:" + codigoCategoria + ", Descricao:" + descricao

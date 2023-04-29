@@ -2,6 +2,7 @@ package br.com.atacado.dominio;
 
 import java.time.LocalDate;
 
+// Class isolada sendo "privada" //
 public class Produto {
 
     private int codigo;
@@ -14,6 +15,7 @@ public class Produto {
 
     private LocalDate dataDeInclusao;
 
+    // Ctrol+Ponto -> "get e set" //
     public int getCodigo() {
         return codigo;
     }
@@ -54,9 +56,11 @@ public class Produto {
         this.dataDeInclusao = dataDeInclusao;
     }
 
+    // Ctrol+Ponto -> "Construtor Vazio" //
     public Produto() {
     }
 
+    // Ctrol+Ponto -> "Construtor" //
     public Produto(int codigo, int codigoSubcategoria, String descricao, double valor, LocalDate dataDeInclusao) {
         this.codigo = codigo;
         this.codigoSubcategoria = codigoSubcategoria;
@@ -65,6 +69,7 @@ public class Produto {
         this.dataDeInclusao = dataDeInclusao;
     }
 
+    // Ctrol+Ponto -> tostring //
     @Override
     public String toString() {
         return "Produto-> [Codigo:" + codigo + ", Codigo Subcategoria:" + codigoSubcategoria + ", Descricao:"

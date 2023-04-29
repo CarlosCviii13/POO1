@@ -3,6 +3,7 @@ package br.com.atacado.fakeDB;
 import java.util.ArrayList;
 import java.util.List;
 
+// MODELO BASE DE BASEFAKEDB //
 public abstract class BaseFakeDB<T> {
 
     protected List<T> tabela;

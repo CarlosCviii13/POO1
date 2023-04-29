@@ -2,6 +2,7 @@ package br.com.atacado.dominio;
 
 import java.time.LocalDate;
 
+// class filha "extends" de "BasePessoa"
 public class PessoaJuridica extends BasePessoa {
 
     private String cnpj;
@@ -12,6 +13,7 @@ public class PessoaJuridica extends BasePessoa {
 
     private String nomeFantasia;
 
+    // Ctrol+Ponto -> "Get e Set" //
     public String getCnpj() {
         return cnpj;
     }
@@ -44,6 +46,7 @@ public class PessoaJuridica extends BasePessoa {
         this.nomeFantasia = nomeFantasia;
     }
 
+    // Ctrol+Ponto -> "Construtor" //
     public PessoaJuridica(int codigoPessoa, String nome, String email, String site, LocalDate dataInclusao, String cnpj,
             String inscricaoEstadual, String inscricaoMunicipal, String nomeFantasia) {
         super(codigoPessoa, nome, email, site, dataInclusao);
@@ -67,6 +70,7 @@ public class PessoaJuridica extends BasePessoa {
         System.out.println("Nome Fantasia: " + this.nomeFantasia);
     }
 
+    // Ctrol+Ponto -> "tostring" //
     @Override
     public String toString() {
         return "Pessoa Juridica-> [" +
