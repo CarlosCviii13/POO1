@@ -3,7 +3,6 @@ package br.com.atacado.dominio;
 import java.time.LocalDate;
 import java.util.List;
 
-// Class isolada "privada" //
 public class Subcategoria {
 
     private int codigo;
@@ -16,7 +15,7 @@ public class Subcategoria {
 
     private List<Produto> produtos;
 
-    // Ctrol+Ponto -> "Get e Set"
+    // Ctrol+Ponto -> "Get e Set" //
     public int getCodigo() {
         return codigo;
     }
@@ -57,10 +56,11 @@ public class Subcategoria {
         this.produtos = produtos;
     }
 
-    // Ctrol+Ponto -> "Construtor Vazio" //
+    // Ctrol+Ponto -> "Contrutor Vazio" //
     public Subcategoria() {
     }
 
+    // Ctrol+Ponto -> "Construtor" //
     public Subcategoria(int codigo, int codigoCategoria, String descricao, LocalDate dataDeInclusao) {
         this.codigo = codigo;
         this.codigoCategoria = codigoCategoria;
@@ -68,11 +68,18 @@ public class Subcategoria {
         this.dataDeInclusao = dataDeInclusao;
     }
 
-    // Ctrol+Ponto -> "Construtor" //
+    public Subcategoria(int codigo, String descricao, LocalDate dataDeInclusao, int codigoCategoria) {
+        this.codigo = codigo;
+        this.codigoCategoria = codigoCategoria;
+        this.descricao = descricao;
+        this.dataDeInclusao = dataDeInclusao;
+    }
+
+    // Ctrol+Ponto -> "tostring" //
     @Override
     public String toString() {
-        return "Subcategoria-> [Codigo:" + codigo + ", Codigo Categoria:" + codigoCategoria + ", Descricao:" + descricao
-                + "\nData De Inclusao:" + dataDeInclusao + "]";
+        return "Subcategoria [codigo=" + codigo + ", codigoCategoria=" + codigoCategoria + ", descricao=" + descricao
+                + ", dataDeInclusao=" + dataDeInclusao + "]";
     }
 
 }

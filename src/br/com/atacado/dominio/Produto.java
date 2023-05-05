@@ -2,12 +2,13 @@ package br.com.atacado.dominio;
 
 import java.time.LocalDate;
 
-// Class isolada sendo "privada" //
 public class Produto {
 
     private int codigo;
 
     private int codigoSubcategoria;
+
+    private int codigoCategoria;
 
     private String descricao;
 
@@ -15,7 +16,7 @@ public class Produto {
 
     private LocalDate dataDeInclusao;
 
-    // Ctrol+Ponto -> "get e set" //
+    // Ctrol+Ponto -> "Get e Set" //
     public int getCodigo() {
         return codigo;
     }
@@ -56,7 +57,15 @@ public class Produto {
         this.dataDeInclusao = dataDeInclusao;
     }
 
-    // Ctrol+Ponto -> "Construtor Vazio" //
+    public int getCodigoCategoria() {
+        return codigoCategoria;
+    }
+
+    public void setCodigoCategoria(int codigoCategoria) {
+        this.codigoCategoria = codigoCategoria;
+    }
+
+    // Ctrol+Ponto -> "Contrutor Vazio" //
     public Produto() {
     }
 
@@ -69,11 +78,21 @@ public class Produto {
         this.dataDeInclusao = dataDeInclusao;
     }
 
-    // Ctrol+Ponto -> tostring //
+    public Produto(int codigo, int codigoSubcategoria, int codigoCategoria, String descricao,
+            LocalDate dataDeInclusao) {
+        this.codigo = codigo;
+        this.codigoSubcategoria = codigoSubcategoria;
+        this.codigoCategoria = codigoCategoria;
+        this.descricao = descricao;
+        this.valor = 0.0;
+        this.dataDeInclusao = dataDeInclusao;
+    }
+
+    // Ctrol+Ponto -> "tostring" //
     @Override
     public String toString() {
-        return "Produto-> [Codigo:" + codigo + ", Codigo Subcategoria:" + codigoSubcategoria + ", Descricao:"
-                + descricao + ", Valor:" + valor + "\nData De Inclusao:" + dataDeInclusao + "]";
+        return "Produto [codigo=" + codigo + ", codigoSubcategoria=" + codigoSubcategoria + ", descricao=" + descricao
+                + ", valor=" + valor + ", dataDeInclusao=" + dataDeInclusao + "]";
     }
 
 }
