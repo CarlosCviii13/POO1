@@ -6,7 +6,7 @@ import br.com.atacado.dominio.Subcategoria;
 
 // "extends" + BaseFakeDB<"Nome da class"> //
 public class SubcategoriaFakeDB extends BaseFakeDB<Subcategoria> {
-
+    // LIST //
     @Override
     public void AutoFill() {
         this.tabela.add(new Subcategoria(1, "Papinha", LocalDate.now(), 1));
