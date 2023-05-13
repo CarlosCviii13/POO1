@@ -17,5 +17,5 @@ public abstract class BaseTeste<TTeste> implements IBaseTeste<TTeste> {
 
     protected abstract void TestarAlteracao(int chave);
 
-    protected abstract void TestarExclusão(int chave);
+    protected abstract void TestarExclusao(int chave);
 }

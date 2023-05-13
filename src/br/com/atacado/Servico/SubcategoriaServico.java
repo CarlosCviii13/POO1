@@ -2,36 +2,42 @@ package br.com.atacado.Servico;
 
 import java.util.List;
 
-import br.com.atacado.Repositorio.ProdutoRepositorio;
+import br.com.atacado.Repositorio.SubcategoriaRepositorio;
+import br.com.atacado.dominio.Subcategoria;
 
-public class Produto extends BaseServico<Produto> {
+public class SubcategoriaServico extends BaseServico<Subcategoria> {
+
+    public SubcategoriaServico() {
+
+        this.repositorio = new SubcategoriaRepositorio();
+    }
 
     @Override
-    public Produto Criar(Produto obj) {
+    public Subcategoria Criar(Subcategoria obj) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'Criar'");
     }
 
     @Override
-    public Produto Ler(int chave) {
+    public Subcategoria Ler(int chave) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'Ler'");
     }
 
     @Override
-    public List<Produto> Ler() {
+    public List<Subcategoria> Ler() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'Ler'");
     }
 
     @Override
-    public Produto Atualizar(Produto obj) {
+    public Subcategoria Atualizar(Subcategoria obj) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'Atualizar'");
     }
 
     @Override
-    public Produto Deletar(int chave) {
+    public Subcategoria Deletar(int chave) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'Deletar'");
     }
