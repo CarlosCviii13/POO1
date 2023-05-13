@@ -1,13 +1,14 @@
-import br.com.atacado.dominio.*; // Parte Comentada "Maneira Antiga"//
-import br.com.atacado.fakeDB.*; // Parte Comentada "Maneira Antiga"//
-import br.com.atacado.teste.TesteCategoriaRepositorio;
+
+// import br.com.atacado.dominio.*; // Parte Comentada "Maneira Antiga"//
+// import br.com.atacado.fakeDB.*; // Parte Comentada "Maneira Antiga"//
+import br.com.atacado.teste.CategoriaTeste;
 
 public class App {
     // Para Inprimir use "public static void main(String[] args) throws Exception{"
     // Uma maneira de espaçar "System.out.println(...);"
     public static void main(String[] args) throws Exception {
 
-        TesteCategoriaRepositorio teste = new TesteCategoriaRepositorio();
+        CategoriaTeste teste = new CategoriaTeste();
         teste.Executar();
 
         // Maneira Antiga //
