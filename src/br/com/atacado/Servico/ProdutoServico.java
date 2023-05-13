@@ -14,32 +14,27 @@ public class ProdutoServico extends BaseServico<Produto> {
 
     @Override
     public Produto Criar(Produto obj) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'Criar'");
+        return this.repositorio.Create(obj);
     }
 
     @Override
     public Produto Ler(int chave) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'Ler'");
+        return this.repositorio.Read(chave);
     }
 
     @Override
     public List<Produto> Ler() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'Ler'");
+        return this.repositorio.Read();
     }
 
     @Override
     public Produto Atualizar(Produto obj) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'Atualizar'");
+        return this.repositorio.Update(obj);
     }
 
     @Override
     public Produto Deletar(int chave) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'Deletar'");
+        return this.repositorio.Delete(chave);
     }
 
 }

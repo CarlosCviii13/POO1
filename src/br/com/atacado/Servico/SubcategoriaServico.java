@@ -14,32 +14,27 @@ public class SubcategoriaServico extends BaseServico<Subcategoria> {
 
     @Override
     public Subcategoria Criar(Subcategoria obj) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'Criar'");
+        return this.repositorio.Create(obj);
     }
 
     @Override
     public Subcategoria Ler(int chave) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'Ler'");
+        return this.repositorio.Read(chave);
     }
 
     @Override
     public List<Subcategoria> Ler() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'Ler'");
+        return this.repositorio.Read();
     }
 
     @Override
     public Subcategoria Atualizar(Subcategoria obj) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'Atualizar'");
+        return this.repositorio.Update(obj);
     }
 
     @Override
     public Subcategoria Deletar(int chave) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'Deletar'");
+        return this.repositorio.Delete(chave);
     }
 
 }
